@@ -2,7 +2,7 @@
 # Python Programming Project 1
 # Write a program to find total investment using compound interest.
 
-# Format add commas and round to 2 decimal places, f is fixed format. 
+# Format add commas and round to 2 decimal places, f is fixed format.
 formatans = ",.2f"
 
 # p = principal(user input)
