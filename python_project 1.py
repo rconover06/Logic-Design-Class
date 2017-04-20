@@ -22,7 +22,7 @@ a = p*(1+(r/n))**(n*t)
 # Formatted soltion for A
 ans = format(a,formatans)
 
-print("$",ans)
+print("The accumulated investment is $",ans)
 # if the number of years is greater than 10 display a message. Otherwise just print the total
 if(t >= 10):
     print("Long term investments are important for retirement planning.")
