@@ -7,7 +7,7 @@ The website for the book we used is: http://openbookproject.net/thinkcs/python/e
 I will also add code from the Syngress Violent Python book as I work through that. http://booksite.elsevier.com/9781597499576/chapters.php
 
 
-# On School lab computers this must be imported to make turtle work.
+On School lab computers this must be imported to make turtle work.
 import sys
 sys.path.insert(0,'c:\Python34\Lib')
 import turtle
