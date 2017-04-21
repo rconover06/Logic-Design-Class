@@ -1,8 +1,8 @@
 # Raul Conover
 # Exercise 3.8 use turtles to create a clock face
 
-import sys
-sys.path.insert(0,'c:\Python34\Lib')
+#import sys
+#sys.path.insert(0,'c:\Python34\Lib')
 import turtle
 
 # Create the screen
