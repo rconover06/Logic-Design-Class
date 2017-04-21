@@ -1,4 +1,4 @@
-# Logic-Design-Class
+# Logic Design 1309
 
 This is for logic design class at South Plains College. I have created this to keep track of the programs I am learning/writing in this class.
 
