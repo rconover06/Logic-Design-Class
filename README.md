@@ -8,6 +8,7 @@ I will also add code from the Syngress Violent Python book as I work through tha
 
 
 On School lab computers this must be imported to make turtle work.
-import sys
-sys.path.insert(0,'c:\Python34\Lib')
-import turtle
+
+  import sys
+  sys.path.insert(0,'c:\Python34\Lib')
+  import turtle
