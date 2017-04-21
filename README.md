@@ -4,7 +4,7 @@ This is for logic design class at South Plains College. I have created this to k
 
 The website for the book we used is: http://openbookproject.net/thinkcs/python/english3e/index.html
 
-I will also add code from the Syngress Violent Python book as I work through that.
+I will also add code from the Syngress Violent Python book as I work through that. http://booksite.elsevier.com/9781597499576/chapters.php
 
 
 # On School lab computers this must be imported to make turtle work.
