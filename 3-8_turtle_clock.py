@@ -15,26 +15,22 @@ tex = turtle.Turtle()
 tex.color("blue")
 tex.pensize(3)
 tex.shape("turtle")
-#tex.speed(5)
+tex.speed(10)
 tex.hideturtle()
+tex.penup()
 
-tex.penup()
-tex.stamp()
-tex.forward(-15)
-tex.pendown()
-tex.forward(-10)
-tex.penup()
-tex.stamp()
-tex.forward(-100)
+# stamp middle turtle
 tex.stamp()
 
-for i in range(1):
-    tex.forward(100)
+# Make stamp and line ecery 30 degrees
+for i in range(12):
+    tex.right(30)
+    tex.forward(125)
     tex.pendown()
     tex.forward(10)
     tex.penup()
     tex.forward(15)
     tex.stamp()
-    tex.forward(-100)
+    tex.forward(-150)
 
 wn.mainloop()
