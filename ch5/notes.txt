@@ -4,3 +4,24 @@ x > y                # ... x is greater than y
 x < y                # ... x is less than y
 x >= y               # ... x is greater than or equal to y
 x <= y               # ... x is less than or equal to y
+
+#AND Operator
+x and False == False
+False and x == False
+y and x == x and y
+x and True == x
+True and x == x
+x and x == x
+
+#OR Operator
+x or False == x
+False or x == x
+y or x == x or y
+x or True == True
+True or x == True
+x or x == x
+
+if BOOLEAN EXPRESSION:
+    STATEMENTS_1        # Executed if condition evaluates to True
+else:
+    STATEMENTS_2        # Executed if condition evaluates to False
