@@ -26,7 +26,7 @@ wn.title("5.12 Bar Graphs with turtles")
 
 tess = turtle.Turtle()
 tess.pensize(3)
-tess.color("blue", "lightblue")
+tess.color("blue", "hotpink")
 
 for v in xs:
     draw_bar(tess, v)

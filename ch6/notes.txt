@@ -1,0 +1,7 @@
+Chapter 6: Fruitful functions
+
+abs = absolute value
+pow = power
+int = integer
+max = largest number
+range = range of integers.
