@@ -23,13 +23,13 @@ def high_low(guess,):
     hilo = str(input(":"))
     return hilo
 
-def min_num(guess,):
+def min_num(guess, newguess,):
     """ Determine the minium the number can be
     """
     minimum = int(lowest + 0)
     return minimum
 
-def max_num(guess,):
+def max_num(guess, newguess,):
     """ Determine the max the number can be.
     """
     maximum = int(highest + 0)
@@ -37,14 +37,20 @@ def max_num(guess,):
 
 # End Functions
 
+
+
 # Set the initial range for the program.
 lowest = 0
 highest = 100
-x = int((highest + lowest) / 2)
+guess = int((highest + lowest) // 2)
 
-minimum = min_num(x,)
-maximum = max_num(x,)
-guess = (minimum + maximum) //2
+minimum = min_num(guess,)
+maximum = max_num(guess,)
+newguess = (minimum + maximum) //2
+
+# Setup the rules for the user
+print("Write down a number from ", lowest," to ", highest,".",
+      "I will try to guess it in as few guesses as possible.")
 
 repeat = True
 ans = "y"
@@ -55,12 +61,12 @@ while repeat:
     elif ans =="n": #or ans == "no":
         hilo = high_low(guess,)
         if hilo == "hihger":
-            minimum = min_num(x,)
-            maximum = max_num(x,)
-            ans = guess_num(guess,)
+            minimum = min_num(guess, newguess,)
+            maximum = max_num(guess, newguess,)
+            ans = guess_num(guess, newguess)
         else:
-            minimum = min_num(x,)
-            maximum = max_num(x,)
+            minimum = min_num(guess, newguess,)
+            maximum = max_num(guess, newguess,)
             ans == guess_num(int(guess / 2,))
         repeat = False
 
