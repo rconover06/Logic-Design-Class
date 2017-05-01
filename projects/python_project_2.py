@@ -7,9 +7,9 @@ import sys
 
 # Start Functions
 def guess_num(guess,):
-    """ Guess a number x and ask yes or no if it is it
+    """ Ask if guess is correct, return y or n
     """
-    print(" Is your number", guess, "?")
+    print("Is your number", guess, "?")
     ans = str(input("[Y/N]:"))
     if ans == "y" or ans == "yes":
         print("I have guessed your number. It was", guess,".")
@@ -20,36 +20,21 @@ def high_low(guess,):
     """ Ask if number x is higher or lower
     """
     print("Is your number higher or lower than", guess,"?")
-    hilo = str(input(":"))
+    hilo = str(input(": "))
     return hilo
-
-def min_num(guess, newguess,):
-    """ Determine the minium the number can be
-    """
-    minimum = int(lowest + 0)
-    return minimum
-
-def max_num(guess, newguess,):
-    """ Determine the max the number can be.
-    """
-    maximum = int(highest + 0)
-    return maximum
 
 # End Functions
 
 
 
 # Set the initial range for the program.
-lowest = 0
-highest = 100
-guess = int((highest + lowest) // 2)
+low = 0
+high = 100
+guess = (high + low) // 2
 
-minimum = min_num(guess,)
-maximum = max_num(guess,)
-newguess = (minimum + maximum) //2
 
 # Setup the rules for the user
-print("Write down a number from ", lowest," to ", highest,".",
+print("Write down a number from ", low," to ", high,".",
       "I will try to guess it in as few guesses as possible.")
 
 repeat = True
@@ -58,18 +43,23 @@ ans = "y"
 while repeat:
     if ans == "y": #or ans == "yes":
         ans = guess_num(guess,)
-    elif ans =="n": #or ans == "no":
+    else:
         hilo = high_low(guess,)
-        if hilo == "hihger":
-            minimum = min_num(guess, newguess,)
-            maximum = max_num(guess, newguess,)
-            ans = guess_num(guess, newguess)
+        if hilo == "h":
+            low = guess
+            newguess = ((high // 2) + high) // 2
+            guess = newguess
+            ans = guess_num(guess,)
+            newguess = ((high // 2) + high) // 2
+            guess =  newguess
+            ans = guess_num(guess,)
         else:
-            minimum = min_num(guess, newguess,)
-            maximum = max_num(guess, newguess,)
-            ans == guess_num(int(guess / 2,))
+            high = guess
+            newguess = (low + high) // 2
+            guess = newguess
+            ans = guess_num(guess,)
         repeat = False
 
-print("ans:",ans,"hilo:", hilo,", min:", minimum, "max:", maximum, ", guess:", guess)
+#print("ans:",ans,"hilo:", hilo, "low:", low, "high:", high, "guess:", guess, "newguess:", newguess)
 
 
