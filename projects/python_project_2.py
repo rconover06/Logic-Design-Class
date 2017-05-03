@@ -46,7 +46,7 @@ while again:
 
     # Setup the rules for the user
     print("Write down a number from", low + 1,"and", high - 1,".")
-    print("If the guess is wrong, tell me if your number is higer or lower.")
+    print("If the guess is wrong, tell me if your number is higher or lower.")
     print("I will try to guess it in as few guesses as possible.")
     print()
 
